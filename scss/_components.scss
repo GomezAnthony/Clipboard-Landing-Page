@@ -1,0 +1,76 @@
+// All the h2 headers
+h2{
+    color: $neutral-primary;
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+// All the h3 headers
+h3{
+    color: $neutral-primary;
+    font-size: 1.2rem;
+    padding-bottom: 14px;
+
+    @include for-desktop{
+        font-size: 1rem;
+        text-align: left;
+    }
+}
+// All the parahraphs tags
+p{
+    color: $neutral-secondary;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    padding-bottom: 30px;
+    padding-left: 4px;
+    padding-right: 4px;
+    max-width: 600px;
+    
+   @include for-desktop{
+       font-size: 13px;
+       
+   }
+}
+
+// Buttons
+.btn{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 25px;
+    border-radius: 50px;
+    border: 1px solid;
+
+    @include for-desktop{
+        width: 200px;
+    }
+
+    &__1{
+        background-color: $primary-color;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $primary-color-animated;
+        }
+    }
+    &__2{
+        background-color: $secondary-color;
+        color: white;
+        cursor: pointer;
+
+        &:hover{
+            background-color: $secondary-color-animated;
+        }
+    }
+    
+}
+a{
+    padding-top: 30px;
+   text-decoration: none; 
+   color: $neutral-primary;
+ 
+   
+   &:hover{
+       color: $neutral-secondary;
+   }
+}

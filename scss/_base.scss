@@ -1,0 +1,45 @@
+@import 'mixins';
+
+ //Primary Colors
+$primary-color: hsl(171, 66%, 44%);
+$secondary-color: hsl(233, 100%, 69%);
+
+// Animated colors
+$primary-color-animated: hsl(171, 73%, 47%);
+$secondary-color-animated: hsl(233, 107%, 72%);
+
+// Nuetral Colors:
+$neutral-primary:  hsl(210, 10%, 33%);
+$neutral-secondary: hsl(201, 11%, 66%);
+
+// Typography
+$primary-font: 'Bai Jamjuree', sans-serif;
+
+
+
+// Resets
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: $primary-font; 
+}
+
+// Container
+.container{
+    background-image: url("/images/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: 100%;
+    width: 100%;
+    padding: 0 5%;
+
+    @include for-desktop{
+        background-image: url("/images/bg-header-desktop.png");
+        background-repeat: no-repeat;
+        overflow: hidden;
+        width: 100%;
+       
+    }
+}
